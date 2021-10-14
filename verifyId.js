@@ -113,6 +113,10 @@ function verifyId(id) {
     }
     // 校验有效期是否合法 end
 
+    // 获取出生年月日
+    result.success.data.birthday = idYear + "-" + id.substring(10, 12) + "-"  + id.substring(12, 14)
+    // 获取年龄
+    result.success.data.age = idAge
     // 获取性别
     result.success.data.gender = idSequenceCode % 2 === 0 ? "女" : "男"
 
