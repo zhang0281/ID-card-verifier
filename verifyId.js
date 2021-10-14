@@ -116,7 +116,7 @@ function verifyId(id) {
     // 获取性别
     result.success.data.gender = idSequenceCode % 2 === 0 ? "女" : "男"
 
-    // 校验位检查
+    // 校验位检查 start
     // 校验系数数组校验系数
     let checkCodeArray = [7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2];
     // 位数对应校验位
@@ -126,9 +126,11 @@ function verifyId(id) {
         checkCode += parseInt(item) * checkCodeArray[index]
     })
     checkCode = checkCode % 11;
-    if(checkDigit[checkCode].toLowerCase() !== idCheckCode.toLowerCase()){
+    if (checkDigit[checkCode].toLowerCase() !== idCheckCode.toLowerCase()) {
         return result.failCheckCodeError
     }
+    // 校验位检查 end
+
     return result.success;
 }
 

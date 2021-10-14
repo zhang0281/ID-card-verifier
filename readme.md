@@ -6,8 +6,8 @@
 
 # 依赖
 
-1. [中华人民共和国行政区划](https://github.com/modood/Administrative-divisions-of-China) - 
-[“省份、城市、区县” 三级联动数据](https://raw.githubusercontent.com/modood/Administrative-divisions-of-China/master/dist/pca-code.json)
+1. [中华人民共和国行政区划](https://github.com/modood/Administrative-divisions-of-China) -
+   [“省份、城市、区县” 三级联动数据](https://raw.githubusercontent.com/modood/Administrative-divisions-of-China/master/dist/pca-code.json)
 2. [jquery](https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js)
 
 # 说明
